@@ -55,7 +55,29 @@
       {
         "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
         "alphabetize": { "order": "asc", "caseInsensitive": true },
-        "newlines-between": "always"
+        "newlines-between": "always",
+        "pathGroups": [
+          {
+            "pattern": "src/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@app/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@server/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@factories/**",
+            "group": "internal",
+            "position": "after"
+          }
+        ]
       }
     ]
   }
